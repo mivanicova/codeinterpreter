@@ -20,7 +20,7 @@ from codeinterpreterapi import CodeInterpreterSession, settings, File
 # we download data from the public BigQuery dataset about Austin crime incidents and save it to a csv file
 # alternatively, you can upload your own data to the csv file and use it in the code interpreter
 
-project = 'bi-sandbox-f64c11b3' # your Google Cloud Platform Project ID 
+project = "my-gcp-project" # your Google Cloud Platform Project ID 
 location = 'US' # Location inserted based on the query results selected to explore
 client = bigquery.Client(project=project, location=location)
 
