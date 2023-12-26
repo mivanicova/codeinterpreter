@@ -65,6 +65,14 @@ while True:
     )
     time.sleep(3)
     print(run.status)
+  # uncomment if you are interested in the actual code executed in each of the steps
+  '''  
+  run_steps = client.beta.threads.runs.steps.list(
+    thread_id=thread.id,
+    run_id=run.id
+  )
+  print(run_steps)
+  '''
   messages = client.beta.threads.messages.list(
     thread_id=thread.id
   )
