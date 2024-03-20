@@ -89,4 +89,11 @@ while True:
         image = image.convert('RGB')
       image.save("output_image.jpg")
 
+deleted_assistant_file = client.beta.assistants.files.delete(
+    assistant_id=assistant.id,
+    file_id=file.id
+)
+print(deleted_assistant_file)
 
+response = client.beta.assistants.delete(assistant.id)
+print(response)
